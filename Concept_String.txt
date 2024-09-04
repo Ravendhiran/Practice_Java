@@ -4,6 +4,7 @@ String is a class
 
 String defintion:
 
+
 why string is non-primitive data type?
 
 
@@ -51,12 +52,30 @@ reverse string = emoclew
 
 equals() - recomended method to compare string.
 
+
+StringBuffer:
+
 Immutable  - we cannot change
 Mutable  - we can change
 
-String  - immutable , canot change
+String  - immutable , cannot change 
 StringBuffer - mutable , can change
 StringBuilder -- mutable, can change
+
+
+Why string is immutable?
+
+Because if I apply any kind of operation apply on the string, that will not impact the original value, still the original value remains the same.
+Ex:
+String s="Welcome";
+System.out.println(s.concat("to Java")); //output: Welcome to Java
+System.out.println(s);  		 //output: Welcome      ->Operation doesn't affect the original value
+
+
+Mutable: if I apply any kind of operation apply on the StringBuffer or StringBuilder, that will impact the original value
+StringBuffer s1=new StringBuffer("Welcome");
+System.out.println(s1.append("to Java"));  //output: Welcome to Java
+System.out.println(s1); 		   //output: Welcome to Java    ->Operation affect the original value
 
 
 Assignments
