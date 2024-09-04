@@ -1,0 +1,103 @@
+Day-9
+--------
+String is a class
+
+String defintion:
+
+why string is non-primitive data type?
+
+
+Methods:
+length() - Returns the length of this string. 
+concat() - Concatenates the specified string to the end of this string (join the strings)	
+	add two strings - s1.concat(s2);
+	add 3 strings - s1.concat(s2).concat(s3);
+trim() - Remove all leading and trailing space
+charAt()- Returns the char value at the specified index. An index ranges from 0 to length() - 1. 
+contains() - Returns true if string contains the specified sequence of char values.
+equals() - Compare two strings
+equalsIgnoreCase() - Compare two strings and ignoring case sensitives
+replace() - Replace single char/sequence of characters(String) in a string
+substring() - Returns a string that is a substring of this string. 
+	s.substring(1, 5);
+toUpperCase() - 
+toLowerCase() - 
+	String s="Welcome";
+	s.toLowerCase().contains("wel"); //true
+
+split() - split/divide the string into the multiple parts based on delimeters
+
+	delimteres examples - ","," ","","@", etc
+
+Cannot use as delimeters: * % ^ &  (   )
+
+
+
+
+
+
+
+
+1) reverse a string.
+
+s="welcome"
+reverse string = emoclew
+
+
+2) String comparison
+
+ "==" used for comparing objects
+"equals()" used for comparing values of objects
+
+equals() - recomended method to compare string.
+
+Immutable  - we cannot change
+Mutable  - we can change
+
+String  - immutable , canot change
+StringBuffer - mutable , can change
+StringBuilder -- mutable, can change
+
+
+Assignments
+----------
+1) Check String is palindrome or not
+
+String s= "MADAM"
+ Output: palindrom
+String s="Welcome"
+	output: Not palindrom
+
+Ref link: https://www.youtube.com/watch?v=8BlUi4-4N4E
+
+2) Remove Junk or Special Characters in String
+
+wel&&^^%%*())*come
+output: welcome
+
+Ref link: https://youtu.be/x0SghWs1bsE
+
+3) How To Remove White Spaces in a String
+
+we l co m e
+output: welcome
+
+Ref link: https://youtu.be/-Miz0uInWVw
+
+4) Count Occurrences of a Character in a String
+Ref link: https://youtu.be/jbGxTi0bi7c
+
+
+5) Count Words in a String
+Ref link: https://youtu.be/dTWfNdfpr_g
+
+
+StringBuilder s = new StringBuilder("welcome");
+string b =s.reverse();
+in this case b =emoclew , s = emoclew as s is mutable ?
+
+
+
+
+
+
