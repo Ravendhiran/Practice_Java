@@ -2,8 +2,10 @@ Day-9
 --------
 String is a class
 
-String defintion:
+String is an object that represents a sequence of characters.
 
+  > It is Index based
+  > It is non-primitive data-type.
 
 why string is non-primitive data type?
 

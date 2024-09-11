@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Anagram_Grouping {
 	
-	public static void groupAnagram(String[] str) {
+	public static Map<String, Integer> groupAnagram(String[] str) {
 		Map<String,Integer> map=new HashMap<String,Integer>();
 		for(String s:str) {
 			char[] charArray=s.toCharArray();
@@ -16,9 +16,14 @@ public class Anagram_Grouping {
 			//Convert Array char[] into String
 			String sortedStr=new String(charArray);
 			if(!map.containsKey(sortedStr)) {
-				//map.put(sortedStr, new ArrayList<Integer>());
+				map.put(sortedStr, 1);
+			}
+			else {
+				Integer integer=map.get(sortedStr);
+				map.put(sortedStr, integer+1);
 			}
 			}
+		return map;
 	}
 
 	public static void main(String[] args) {
@@ -28,8 +33,8 @@ public class Anagram_Grouping {
 		//Add values directly to the list
 		List<String> list=Arrays.asList("eat","tea","tan","ate","nat","bat");
 		System.out.println(list);
-	
 		
+		System.out.println(groupAnagram(s));		
 		
 
 	}
