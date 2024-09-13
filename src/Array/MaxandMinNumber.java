@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 public class MaxandMinNumber {
 
 	public static void main(String[] args) {
@@ -25,6 +27,11 @@ public class MaxandMinNumber {
 		}
 		
 		System.out.println("Minimum value: "+min);
+		
+		Arrays.sort(a);
+		System.out.println("Maximum value using in-built method: "+a[a.length-1]);
+		System.out.println("Minimum value using in-built method: "+a[0]);
+		
 		
 	}
 

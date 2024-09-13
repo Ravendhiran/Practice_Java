@@ -11,8 +11,8 @@ public class HashSetDemo {
 		
 		//Declaration
 		
-		HashSet myset=new HashSet();
-		//Set myset=new HashSet();
+		Set<Object> myset=new HashSet<Object>();
+		//HashSet myset=new HashSet();
 		//HashSet <String>myset=new HashSet<String>();
 		
 		//adding elements in to hashset

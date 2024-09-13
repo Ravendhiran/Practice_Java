@@ -1,16 +1,14 @@
 package Collections;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
 		
 		//Declaration
-		ArrayList mylist=new ArrayList();
-		//List mylist=new ArrayList();
+		List<Object> mylist=new ArrayList<Object>();
+		//ArrayList mylist=new ArrayList();
 		//ArrayList <String>mylist=new ArrayList<String>();
 		
 		//Adding data into arraylist
@@ -33,7 +31,7 @@ public class ArrayListDemo {
 		mylist.remove(5);  // here 5 is index of element
 		System.out.println("After removing:"+mylist); //[100, 10.5, welcome, A, true, null, null]
 		
-		//Insert element in the arraylist
+		//Insert element anywhere (middle) in the arraylist
 		mylist.add(2,"java");
 		System.out.println("After insertion:"+ mylist); //[100, 10.5, java, welcome, A, true, null, null]
 	
@@ -63,7 +61,7 @@ public class ArrayListDemo {
 		*/
 		
 		//using iterator
-		/*Iterator <Object> it=mylist.iterator();
+		/*Iterator<Object> it=mylist.iterator();
 				
 		while(it.hasNext())
 		{
@@ -71,10 +69,10 @@ public class ArrayListDemo {
 		}
 		*/
 		//Cheking arraylist is empty or not
-		System.out.println("Is arraylist empty?"+ mylist.isEmpty());
+		System.out.println("Is arraylist empty?: "+ mylist.isEmpty());
 		
-		//remove all the elements from array list
-		ArrayList mylist2=new ArrayList();
+		//remove multiple elements from array list mentioning those elements in another list
+		ArrayList<Object> mylist2=new ArrayList<Object>();
 		mylist2.add(100);
 		mylist2.add("welcome");
 				
@@ -83,8 +81,9 @@ public class ArrayListDemo {
 		
 		//remove all the elemnts/clear
 		mylist.clear();
-		System.out.println("Is arraylist empty?"+ mylist.isEmpty());  //true
-		
+		System.out.println("After removing all the elements:"+mylist); 
+		System.out.println("Is arraylist empty?: "+ mylist.isEmpty());  //true
+		 
 	
 	}
 
